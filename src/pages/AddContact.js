@@ -212,7 +212,7 @@ try {
   };
   useEffect(() => {
     const times= new Date();
-    var fullTime  = times.getDate()+ "/" + times.getMonth() +"/" + times.getFullYear() + ", " + times.getHours() + ":" + times.getMinutes() + ":" +times.getSeconds()
+    var fullTime  = times.getDate()+ "/" + (times.getMonth()+1) +"/" + times.getFullYear() + ", " + times.getHours() + ":" + times.getMinutes() + ":" +times.getSeconds()
     setnewTime(fullTime)
     console.log(newTime)
     console.log(fullTime)
